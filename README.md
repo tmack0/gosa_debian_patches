@@ -13,3 +13,7 @@ The second base64() encodes any password sent to shell for password hooks (both 
 
 Other patches will be added here as I clean up and generalize them.
 ToDo: php-native Samba hash generation (no reason to call out to Perl to do this)
+
+### Use
+
+These patches are in addition to all the other patches in the Debian Gosa(2.7) packaging source. To use these, get the source package for gosa 2.7, the orig tarball and unpack. CD into the gosa source dir. Check in debian/patches that the patch sequencing has not moved past 1043 and 1044 (don't want to overwrite other patches! renumber if needed) and move these into the debian/patches directory. Edit the series file and add these to the end of the list. Edit debian/changelog and add an entry (properly formatted!) bumping the patch version (ie: deb8u3 from deb8u2 or deb9u2 from deb9u1). Use dpkg-buildpackage to rebuild the debian packages, they will show up in the parent dir.
