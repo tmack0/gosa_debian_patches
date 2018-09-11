@@ -1,5 +1,8 @@
 # gosa_debian_patches
 ### Overview
+These have been accepted and merged upstream! Please use the upstream repo to get fresh source with these fixes (and others).
+https://github.com/gosa-project/gosa-core
+
 This repo contains a few patches for the Debian maintained Gosa packages (for 2.7, the PHP based Gosa). Hopefully they will be accepted upstream (still waiting on PR access to Salsa to do so). Currently there are 2 patches here:
 
 * Enable sha256 and sha512 passwords
